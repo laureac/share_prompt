@@ -12,7 +12,10 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        "primary-orange": "#FF5722",
+        "primary-orange": "#ff9000",
+      },
+      boxShadow: {
+        custom: "0 2px 12px rgba(67,137,162,0.08)",
       },
     },
   },
