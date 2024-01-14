@@ -38,7 +38,7 @@ export interface PromptCardListProps {
 }
 
 export interface ProfileProps {
-  name: string;
+  name: string | null;
   desc: string;
   data: Array<PostProps>;
   handleEdit?: (post: PostProps) => void;

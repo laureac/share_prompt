@@ -34,7 +34,7 @@ const Feed = () => {
 
   // Search states
   const [searchText, setSearchText] = useState("");
-  const [searchedResults, setSearchedResults] = useState([]);
+  const [searchedResults, setSearchedResults] = useState<PostProps[]>([]);
 
   // Search function by tag, prompt or username
   const handleTagClick = (tagName: string) => {
@@ -61,6 +61,7 @@ const Feed = () => {
       );
 
       setSearchedResults(matchingPosts);
+      
     }
   }, [searchText]);
 
